@@ -43,10 +43,10 @@ eventlog-host 127.0.0.1
 
 want-dev #f
 
-accountdb-local-file databases/csm-cookies.db
+accountdb-local-file ../databases/csm-cookies.db
 
-icon-filename phase_3/etc/icon.ico
-cursor-filename phase_3/etc/toonmono.cur
+icon-filename ../phase_3/etc/icon.ico
+cursor-filename ../phase_3/etc/toonmono.cur
 
 default-directnotify-level info
 

@@ -51,10 +51,8 @@ want-dev #f
 audio-library-name p3fmod_audio
 accountdb-local-file databases/csm-cookies.db
 
-model-path ../models
-default-model-extension .bam
-icon-filename icon.ico
-cursor-filename toonmono.cur
+icon-filename ../phase_3/etc/icon.ico
+cursor-filename ../phase_3/etc/toonmono.cur
 
 default-directnotify-level info
 
