@@ -1,2 +1,2 @@
-python.exe __main__.py
+"Lib/python.exe" __main__.py
 pause
