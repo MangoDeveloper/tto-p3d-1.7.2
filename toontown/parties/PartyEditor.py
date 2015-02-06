@@ -1,7 +1,6 @@
 # 2013.08.22 22:23:35 Pacific Daylight Time
 # Embedded file name: toontown.parties.PartyEditor
 import time
-from sets import Set
 from pandac.PandaModules import Vec3, Vec4, Point3, TextNode, VBase4
 from direct.gui.DirectGui import DirectFrame, DirectButton, DirectLabel, DirectScrolledList, DirectCheckButton
 from direct.gui import DirectGuiGlobals
@@ -175,13 +174,13 @@ class PartyEditor(DirectObject, FSM):
 
     def getMutuallyExclusiveActivities(self):
         currentActivities = self.partyEditorGrid.getActivitiesOnGrid()
-        actSet = Set([])
+        actSet = set([])
         for act in currentActivities:
             actSet.add(act[0])
 
         result = None
         for mutuallyExclusiveTuples in PartyGlobals.MutuallyExclusiveActivities:
-            mutSet = Set(mutuallyExclusiveTuples)
+            mutSet = set(mutuallyExclusiveTuples)
             inter = mutSet.intersection(actSet)
             if len(inter) > 1:
                 result = inter
