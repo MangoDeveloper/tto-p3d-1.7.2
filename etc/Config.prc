@@ -1,11 +1,22 @@
 load-display pandagl
+#load-display pandadx9
+#load-display pandadx8
+#load-display pandagles
+#load-display tinydisplay
 
 win-origin 50 50
 win-size 800 600
 
 fullscreen #f
 
-framebuffer-mode rgba double-buffer depth hardware
+framebuffer-hardware #t
+framebuffer-software #f
+
+depth-bits 1
+color-bits 1
+alpha-bits 0
+stencil-bits 0
+multisamples 0
 
 notify-level warning
 default-directnotify-level warning
@@ -19,8 +30,14 @@ want-tk           #f
 want-pstats            #f
 show-frame-rate-meter  #f
 
-audio-library-name fmod_audio
-hardware-animated-vertices 0
+audio-library-name p3openal_audio
+use-movietexture #t
+hardware-animated-vertices #f
+
+model-cache-dir /cache
+model-cache-textures #f
+
+basic-shaders-only #t
 
 window-title Toontown Online
 
