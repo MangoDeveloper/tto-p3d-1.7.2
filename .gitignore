@@ -1,5 +1,1 @@
 *.py[co]
-log/**
-screenshots/**
-models/**
-cache/**
