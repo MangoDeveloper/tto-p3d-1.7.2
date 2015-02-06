@@ -183,7 +183,7 @@ class ToonBase(OTPBase.OTPBase):
         self.walking = pressed
 
     def takeScreenShot(self):
-        namePrefix = 'screenshot'
+        namePrefix = 'screenshots/screenshot'
         namePrefix = launcher.logPrefix + namePrefix
         timedif = globalClock.getRealTime() - self.lastScreenShotTime
         if self.glitchCount > 10 and self.walking:
